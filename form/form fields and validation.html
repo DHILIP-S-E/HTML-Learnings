@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>form</title>
+    </head>
+
+    <body>
+        <form action="">
+            <!--VALIDATION MEANS THAT HAD MIN AND KA==MAX VAKUE FIELDS REQUIRED SOME SYMBOL LIKE @-->
+            <p>
+                <label for="mail">Enter the Mail id</label>
+                <input type="email" name="mail" id="mail" required>
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" required min="18" max="99">
+            </p>
+            <!-- DATA INPUT -->
+            <p>
+                <label for="dob">DOB</label>
+                <input type="date" id="dob" name="dob">
+            </p>
+            <!--range-->
+            <p>
+                <label for="price">Range</label>
+                <input type="range" name="price" id="price" min="100" max="1000" step="10">
+            </p>
+            <!--URL,WEEK,TIME,SEARCH-->
+            <p>
+                <label for="url">Enter the link</label>
+                <input type="url" id="url" name="url"> <br><br>
+
+                <label for="week">WEEK</label>
+                <input type="week" name="week" id="week"><br><br>
+
+                <label for="time">TIME</label>
+                <input type="time" name="time" id="time"><br><br>
+
+                <label for="search">SEARCH</label>
+                <input type="search" name="search" id="search">
+            </p>
+
+            <p><input type="submit"></p>
+        </form>
+    </body>
+</html>
